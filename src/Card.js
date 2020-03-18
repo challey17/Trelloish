@@ -1,12 +1,12 @@
 import React from "react";
+import "./Card.css";
 
-function Card() {
+export default function Card(props) {
   return (
     <div className="Card">
-      <h3>card title</h3>
-      <p>content</p>
+      <button type="button">delete</button>
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
     </div>
   );
 }
-
-export default Card;
